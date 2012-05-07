@@ -21,7 +21,7 @@ describe "simple automaton" do
   context "starting at A" do
     def new_state_after message
       state = State.new :A
-      new_state = state.input "0"
+      new_state = state.input message
       new_state.state.should == :A
     end
     it "transistions to A when it receives 0" do
