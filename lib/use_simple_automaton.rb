@@ -14,8 +14,8 @@ end
   "0100001001010101000100101",
   "110000100101010100010010",
   "0110"
-].each do |action|
-  action.each_char do |message|
+].each do |input|
+  input.each_char do |message|
     receive message
   end
   puts final_state
