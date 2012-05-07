@@ -1,3 +1,3 @@
 # Automata
 
-Learing about automata on the [https://www.coursera.org/course/automata](Stanford University Automata Course)
+Learing about automata on the [Stanford University Automata Course](https://www.coursera.org/course/automata)
