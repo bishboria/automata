@@ -8,6 +8,7 @@ class State
   def input message
     if message == "0"
       State.new :A
+    else
   end
 
   def state
