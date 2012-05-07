@@ -60,7 +60,7 @@ describe "simple automaton" do
   end
 
   context "starting at C" do
-    let(:state) { StateC.new }
+    let(:starting_state) { StateC.new }
 
     it "transitions to C when it receives 0" do
       state_after("0").should == StateC.new
