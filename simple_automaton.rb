@@ -56,4 +56,16 @@ describe "simple automaton" do
       state_after "1", StateC.new
     end
   end
+
+  context "starting at B" do
+    let(:state) { StateB.new }
+
+    it "transitions to A when it receives 0" do
+      state_after "0", StateA.new
+    end
+
+    it "transitions to C when it receives 1" do
+      state_after "1", StateC.new
+    end
+  end
 end
