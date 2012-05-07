@@ -1,5 +1,8 @@
 require "rspec"
 
+class State
+
+end
 describe "simple automaton" do
   context "starting at A" do
     it "transistions to A when it receives 0" do
