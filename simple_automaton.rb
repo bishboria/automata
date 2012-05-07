@@ -27,9 +27,6 @@ class StateB < State
 end
 
 class StateC < State
-  def input message
-
-  end
 end
 
 describe "simple automaton" do
