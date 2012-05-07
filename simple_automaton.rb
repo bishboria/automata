@@ -40,5 +40,9 @@ describe "simple automaton" do
     it "transitions to A when it receives 0" do
       state_after "0", :A
     end
+
+    it "transitions to C when it receives 1" do
+      state_after "1", :C
+    end
   end
 end
