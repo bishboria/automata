@@ -32,7 +32,7 @@ describe "simple automaton" do
 
   context "starting at B" do
     def state_after message, expected_state
-      state = State.new :A
+      state = State.new :B
       new_state = state.input message
       new_state.state.should == expected_state
     end
