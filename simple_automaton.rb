@@ -7,7 +7,7 @@ class State
 
   def input message
     return State.new :A if message == "0"
-      State.new :B
+    State.new :B
   end
 
   def state
