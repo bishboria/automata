@@ -14,7 +14,7 @@ end
 
 class StateA < State
   def input message
-    self if message == "0"
+    return self if message == "0"
     StateB.new :B
   end
 end
