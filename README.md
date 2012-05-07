@@ -4,4 +4,4 @@ Learing about automata on the [https://www.coursera.org/course/automata](Stanfor
 
 ## Simple Automaton
 
-This example is taken from [simple automaton image](file:///simpleautomaton.png)
+This example is taken from [simple automaton image](simpleautomaton.png)
