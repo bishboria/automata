@@ -28,12 +28,13 @@ class StateC < State
 end
 
 describe "simple automaton" do
+  def state_after message, expected_state
+    new_state = state.input message
+    new_state.should == expected_state
+  end
+
   context "starting at A" do
     let (:state) { StateA.new }
-    def state_after message, expected_state
-      new_state = state.input message
-      new_state.should == expected_state
-    end
 
     it "transistions to A when it receives 0" do
       state_after "0", StateA.new
