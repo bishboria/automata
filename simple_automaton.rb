@@ -8,15 +8,15 @@ class State
   end
 
   def input message
-    #@table_rule = {
-      #A: [ (State.new :A), (State.new :B)],
-      #B: [ (State.new :A), (State.new :C)],
-      #C: [ (State.new :C), (State.new :C)]
-    #}
-    #@table_rule[@state][message.to_i]
-    return State.new :A if message == "0"
-    return State.new :C if @state == :B && message == "1"
-    State.new :B
+    @table_rule = {
+      A: [ (State.new :A), (State.new :B)],
+      B: [ (State.new :A), (State.new :C)],
+      C: [ (State.new :C), (State.new :C)]
+    }
+    @table_rule[@state][message.to_i]
+    #return State.new :A if message == "0"
+    #return State.new :C if @state == :B && message == "1"
+    #State.new :B
   end
 end
 
