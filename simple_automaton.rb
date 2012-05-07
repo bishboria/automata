@@ -41,7 +41,7 @@ describe "simple automaton" do
     end
     
     it "transitions to B when it receives 1" do
-      state_after("1").should == StateB.new
+      state_after_message("1").should == StateB.new
     end
   end
 
