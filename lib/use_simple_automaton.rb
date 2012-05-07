@@ -6,7 +6,7 @@ def receive message
 end
 
 def final_state
-  @state.class.to_s
+  @state.class
 end
 
 # The Simple Automaton detects if an
