@@ -28,7 +28,7 @@ describe "simple automaton" do
     it "transitions to B when it receives 1" do
       state = State.new :A
       new_state = state.input "1"
-      new_state.state.should == "1"
+      new_state.state.should == :B
     end
   end
 end
