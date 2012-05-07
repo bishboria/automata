@@ -20,5 +20,11 @@ describe "simple automaton" do
       new_state = state.input "0"
       new_state.state.should == "0"
     end
+    
+    it "transitions to B when it receives 1" do
+      state = State.new :A
+      new_state = state.input "1"
+      new_state.state.should == "1"
+    end
   end
 end
