@@ -4,6 +4,10 @@ class State
   def input message
     fail "Override me"
   end
+
+  def to_s
+    "#{self.class}"
+  end
 end
 
 class StateA < State
