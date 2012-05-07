@@ -32,7 +32,7 @@ end
 
 describe "simple automaton" do
   def state_after message
-    state.input message
+    starting_state.input message
   end
 
   context "starting at A" do
