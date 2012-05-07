@@ -25,13 +25,6 @@ class StateB < State
     StateC.new :C
   end
 end
-class State
-  attr_reader :state
-
-  def initialize start_state
-    @state = start_state
-  end
-end
 
 describe "simple automaton" do
   context "starting at A" do
