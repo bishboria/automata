@@ -9,6 +9,11 @@ def final_state
   @state.class.to_s
 end
 
+# The Simple Automaton detects if an
+# input string contains no 11. The
+# result will be State A or B. If the
+# string contains 11 it'll be State C
+
 [
   "010000100101010100010010",
   "0100001001010101000100101",
