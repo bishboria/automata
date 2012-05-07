@@ -39,7 +39,7 @@ describe "simple automaton" do
     let (:state) { StateA.new }
 
     it "transistions to A when it receives 0" do
-      state_after "0", StateA.new
+      state_after("0").should == StateA.new
     end
     
     it "transitions to B when it receives 1" do
