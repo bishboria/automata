@@ -61,11 +61,11 @@ describe "simple automaton" do
     let(:starting_state) { StateC.new }
 
     it "transitions to C when it receives 0" do
-      state_after("0").should == StateC.new
+      state_after_message("0").should == StateC.new
     end
 
     it "transitions to C when it receives 1" do
-      state_after("1").should == StateC.new
+      state_after_message("1").should == StateC.new
     end
   end
 end
