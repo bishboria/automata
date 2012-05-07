@@ -29,7 +29,7 @@ class StateC < State
 end
 
 describe "simple automaton" do
-  def state_after message
+  def state_after_message message
     starting_state.input message
   end
 
@@ -37,7 +37,7 @@ describe "simple automaton" do
     let (:starting_state) { StateA.new }
 
     it "transistions to A when it receives 0" do
-      state_after("0").should == StateA.new
+      state_after_message("0").should == StateA.new
     end
     
     it "transitions to B when it receives 1" do
