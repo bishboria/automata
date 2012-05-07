@@ -1,8 +1,6 @@
 require "rspec"
 
 class State
-  attr_reader :state
-
   def input message
     fail "Override me"
   end
