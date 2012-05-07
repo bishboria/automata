@@ -44,7 +44,7 @@ describe "simple automaton" do
     def state_after message, expected_state
       state = StateB.new
       new_state = state.input message
-      new_state.state.should == expected_state
+      new_state.should == expected_state
     end
 
     it "transitions to A when it receives 0" do
