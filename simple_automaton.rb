@@ -5,6 +5,9 @@ class State
     fail "Override me"
   end
 
+  def == other
+    self.class == other.class
+  end
   def to_s
     "#{self.class}"
   end
