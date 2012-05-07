@@ -29,4 +29,10 @@ describe "simple automaton" do
       state_after "1", :B
     end
   end
+
+  context "starting at B" do
+    it "transitions to A when it receives 0" do
+      state_after "0", :A
+    end
+  end
 end
