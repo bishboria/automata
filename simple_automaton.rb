@@ -8,9 +8,6 @@ class State
   def == other
     self.class == other.class
   end
-  def to_s
-    "#{self.class}"
-  end
 end
 
 class StateA < State
@@ -51,7 +48,7 @@ describe "simple automaton" do
     def state_after message, expected_state
       state = StateB.new
       new_state = state.input message
-      new_state.should eq(expected_state)
+      new_state.should == expected_state
     end
 
     it "transitions to A when it receives 0" do
