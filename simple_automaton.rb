@@ -1,7 +1,9 @@
 require "rspec"
 
 class State
-
+  def initialize start_state
+    @state = start_state
+  end
 end
 describe "simple automaton" do
   context "starting at A" do
