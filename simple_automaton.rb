@@ -36,7 +36,7 @@ describe "simple automaton" do
   end
 
   context "starting at A" do
-    let (:state) { StateA.new }
+    let (:starting_state) { StateA.new }
 
     it "transistions to A when it receives 0" do
       state_after("0").should == StateA.new
