@@ -23,7 +23,7 @@ describe "simple automaton" do
     def state_after message, expected_state
       state = State.new :A
       new_state = state.input message
-      new_state.state.should == :A
+      new_state.state.should == expected_state
     end
 
     it "transistions to A when it receives 0" do
