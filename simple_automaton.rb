@@ -22,6 +22,7 @@ end
 class StateB < State
   def input message
     StateA.new :A if message == "0"
+    StateC.new :C
   end
 end
 class State
