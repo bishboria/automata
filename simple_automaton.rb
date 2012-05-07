@@ -54,7 +54,7 @@ describe "simple automaton" do
     end
 
     it "transitions to C when it receives 1" do
-      state_after "1", :C
+      state_after "1", StateC.new
     end
   end
 end
