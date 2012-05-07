@@ -1,4 +1,4 @@
-require "rspec"
+require_relative "../lib/simple_automaton"
 
 describe "simple automaton" do
   def state_after_message message
