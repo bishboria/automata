@@ -11,7 +11,7 @@ end
 class StateA < State
   def input message
     return self if message == "0"
-    StateB.new :B
+    StateB.new
   end
 end
 
