@@ -6,7 +6,7 @@ class State
   end
 
   def input message
-
+    State.new :A
   end
 
   def state
