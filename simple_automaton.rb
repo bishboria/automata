@@ -11,6 +11,12 @@ class State
     raise "Override me"
   end
 end
+
+class StateA < State
+  def input
+
+  end
+end
 class State
   attr_reader :state
 
