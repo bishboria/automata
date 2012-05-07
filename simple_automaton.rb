@@ -38,7 +38,7 @@ describe "simple automaton" do
       state_after "0", :A
     end
     
-    it "transitions to B when it receives 1" do
+    xit "transitions to B when it receives 1" do
       state_after "1", :B
     end
   end
@@ -50,11 +50,11 @@ describe "simple automaton" do
       new_state.state.should == expected_state
     end
 
-    it "transitions to A when it receives 0" do
+    xit "transitions to A when it receives 0" do
       state_after "0", :A
     end
 
-    it "transitions to C when it receives 1" do
+    xit "transitions to C when it receives 1" do
       state_after "1", :C
     end
   end
