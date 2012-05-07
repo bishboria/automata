@@ -13,7 +13,7 @@ class State
 end
 
 class StateA < State
-  def input
+  def input message
 
   end
 end
