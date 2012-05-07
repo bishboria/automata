@@ -10,7 +10,7 @@ class State
   end
 
   def state
-
+    "0"
   end
 end
 describe "simple automaton" do
