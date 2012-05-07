@@ -8,7 +8,7 @@ class State
   end
 
   def input message
-    raise "Override me"
+    fail "Override me"
   end
 end
 
