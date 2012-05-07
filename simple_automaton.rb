@@ -8,6 +8,10 @@ class State
   def input message
 
   end
+
+  def state
+
+  end
 end
 describe "simple automaton" do
   context "starting at A" do
