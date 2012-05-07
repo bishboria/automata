@@ -18,6 +18,12 @@ class StateA < State
     StateB.new :B
   end
 end
+
+class StateB < State
+  def input message
+    StateA.new :A if message == "0"
+  end
+end
 class State
   attr_reader :state
 
