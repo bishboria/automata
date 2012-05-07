@@ -31,7 +31,7 @@ class StateC < State
 end
 
 describe "simple automaton" do
-  def state_after message, expected_state
+  def state_after message
     state.input message
   end
 
