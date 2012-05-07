@@ -45,8 +45,8 @@ describe "simple automaton" do
   end
 
   context "starting at B" do
+    let(:state) { StateB.new }
     def state_after message, expected_state
-      state = StateB.new
       new_state = state.input message
       new_state.should == expected_state
     end
