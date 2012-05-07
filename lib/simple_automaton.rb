@@ -22,6 +22,6 @@ end
 
 class StateC < State
   def input message
-    StateC.new
+    self
   end
 end
