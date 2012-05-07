@@ -12,6 +12,7 @@ end
 
 class StateA < State
   def input message
+    [self, StateB.new][message.to_i]
     return self if message == "0"
     StateB.new
   end
