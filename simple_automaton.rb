@@ -19,6 +19,9 @@ class State
 end
 describe "simple automaton" do
   context "starting at A" do
+    def new_state_after message
+      state
+    end
     it "transistions to A when it receives 0" do
       state = State.new :A
       new_state = state.input "0"
