@@ -19,8 +19,6 @@ end
 class StateB < State
   def input message
     [StateA.new, StateC.new][message.to_i]
-    return StateA.new if message == "0"
-    StateC.new
   end
 end
 
