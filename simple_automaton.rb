@@ -9,6 +9,7 @@ class State
     if message == "0"
       State.new :A
     else
+      State.new :B
   end
 
   def state
