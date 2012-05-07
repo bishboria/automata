@@ -21,7 +21,7 @@ end
 
 class StateB < State
   def input message
-    StateA.new :A if message == "0"
+    return StateA.new :A if message == "0"
     StateC.new :C
   end
 end
@@ -38,7 +38,7 @@ describe "simple automaton" do
       state_after "0", :A
     end
     
-    xit "transitions to B when it receives 1" do
+    it "transitions to B when it receives 1" do
       state_after "1", :B
     end
   end
