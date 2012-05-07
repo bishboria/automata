@@ -50,7 +50,7 @@ describe "simple automaton" do
       new_state.state.should == expected_state
     end
 
-    xit "transitions to A when it receives 0" do
+    it "transitions to A when it receives 0" do
       state_after "0", :A
     end
 
