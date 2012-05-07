@@ -26,6 +26,12 @@ class StateB < State
   end
 end
 
+class StateC < State
+  def input message
+
+  end
+end
+
 describe "simple automaton" do
   context "starting at A" do
     def state_after message, expected_state
