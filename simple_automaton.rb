@@ -67,7 +67,7 @@ describe "simple automaton" do
     end
 
     it "transitions to C when it receives 1" do
-      state_after "1", StateC.new
+      state_after("1").should == StateC.new
     end
   end
 end
