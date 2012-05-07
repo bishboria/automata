@@ -17,7 +17,7 @@ end
 
 class StateB < State
   def input message
-    return StateA.new :A if message == "0"
+    return StateA.new if message == "0"
     StateC.new :C
   end
 end
