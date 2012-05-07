@@ -1,6 +1,8 @@
 require "rspec"
 
 class State
+  attr_reader :state
+
   def initialize start_state
     @state = start_state
   end
