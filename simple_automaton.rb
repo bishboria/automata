@@ -11,10 +11,6 @@ class State
     return State.new :A if message == "0"
     State.new :B
   end
-
-  def state
-    @state
-  end
 end
 
 describe "simple automaton" do
