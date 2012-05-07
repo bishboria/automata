@@ -10,6 +10,7 @@ class State
       State.new :A
     else
       State.new :B
+    end
   end
 
   def state
