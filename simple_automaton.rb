@@ -57,7 +57,7 @@ describe "simple automaton" do
     end
   end
 
-  context "starting at B" do
+  context "starting at C" do
     let(:state) { StateB.new }
 
     it "transitions to A when it receives 0" do
