@@ -9,6 +9,7 @@ class State
 
   def input message
     return State.new :A if message == "0"
+    return State.new :C if @state == :B && message == "1"
     State.new :B
   end
 end
