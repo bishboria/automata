@@ -14,7 +14,7 @@ class State
   end
 
   def state
-    "0"
+    @state
   end
 end
 describe "simple automaton" do
