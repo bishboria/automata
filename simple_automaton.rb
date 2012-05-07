@@ -6,7 +6,7 @@ class State
   end
 
   def input message
-    State.new :A if message == "0"
+    return State.new :A if message == "0"
     else
       State.new :B
     end
