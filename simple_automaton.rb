@@ -46,10 +46,6 @@ describe "simple automaton" do
 
   context "starting at B" do
     let(:state) { StateB.new }
-    def state_after message, expected_state
-      new_state = state.input message
-      new_state.should == expected_state
-    end
 
     it "transitions to A when it receives 0" do
       state_after "0", StateA.new
