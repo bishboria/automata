@@ -19,6 +19,7 @@ class State
 end
 describe "simple automaton" do
   context "starting at A" do
+
     def state_after message, expected_state
       state = State.new :A
       new_state = state.input message
